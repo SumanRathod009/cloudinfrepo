@@ -38,8 +38,7 @@ jobs:
       - name: Print the CloudFormation linter version and run linter
         run: |
           cd $GITHUB_WORKSPACE
-          for fname in $(find ./cloudformation -type f | egrep ".(yaml|yml|json)$"); do cfn-lint --template "${fname}" ; done
-          for fname in $(find ./templates/cloudformation -type f | egrep ".(yaml|yml|json)$"); do cfn-lint --template "${fname}" ; done
+          find ./cloudformation -type f | egrep ".(yaml|yml|json)$"=fname;for fname in {.json,.xml,.yaml};do cnf-lint --template; done
           
 
             
