@@ -1,5 +1,4 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: 'Catalog Product: Self-service product.'
 
 # CloudFormation parameter UI definitions
 Metadata:
